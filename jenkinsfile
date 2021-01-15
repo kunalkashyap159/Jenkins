@@ -1,0 +1,16 @@
+stage ('first')
+{
+    echo 'this is first pipe stage 1'
+}
+stage ('second')
+{
+    echo 'this is first pipe stage 2'
+}
+stage ('third')
+{
+    echo 'this is first pipe stage 3'
+}
+stage ('four')
+{
+    build quietPeriod: 5, job: 'this'
+}    
